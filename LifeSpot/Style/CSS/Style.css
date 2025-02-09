@@ -1,0 +1,86 @@
+﻿.bordered {
+    border: 2px solid black;
+    background-color: azure;
+    padding: 10px;
+}
+
+.video-container {
+    display: inline-block;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    font-size: medium;
+    color: dimgrey;
+    line-height: 66%;
+    padding-left: 1%;
+}
+
+.navbar {
+    color: darkgray;
+    padding-left: 15%;
+}
+
+header {
+    color: black;
+    padding-left: 1%;
+    padding-top: 1.2%;
+}
+
+#header-index {
+    color: #808080;
+}
+
+aside {
+    height: 100%; /* Высота в полный размер. Этот параметр можно убрать, если вы хотите выставлять высоту автоматически */
+    width: 11%;
+    position: fixed; /* Фиксированная позиция сайд-бара. Так он будет оставаться на месте при скроллинге */
+    z-index: 1; /* Сайд-бар будет поверх остальных элементов */
+    top: 0; /* Сайдбар будет в самой верхней части страницы */
+    left: 0;
+    background-color: #111; /* Черный цвет фона (задан в виде кода) */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    padding-top: 2%;
+    
+    font-size: large;
+}
+
+/* Стили панели навигации */
+.navbar p {
+    color: darkgray;
+    padding-left: 15%;
+}
+/* Стили панели навигации при наведении мышью */
+.navbar p:hover {
+    color: aliceblue;
+}
+
+body {
+    padding-left: 11%;
+}
+
+header, footer, aside, body, .navbar, .video-container {
+    font-family: "Helvetica 65 Medium", sans-serif;
+}
+
+header, footer, body, .video-container {
+    background-color: linen;
+}
+
+input {
+    background-color: #0f0f0f;
+    height: 40px;
+    border: 2px solid #1c1c1c;
+    border-radius: 50px;
+    padding-left: 10px;
+    color: white;
+    width: 30%;
+    margin-bottom: 1%;
+}
+
+input:focus{
+    border: 4px solid white;
+}
