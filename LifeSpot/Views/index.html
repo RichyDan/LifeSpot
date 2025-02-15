@@ -7,10 +7,14 @@
     <script type="text/javascript" src="../Style/JS/index.js"></script>
     <!-- Внутренний скрипт с вызовами функций -->
    <script>
-       // Создадим и обработаем сессию
-       //let session = handleSession();
-       //sessionLog(session);
-       // Функция объявлена через declaration      
+       // Проверка на возраст
+       //checkAge();
+
+       // сохранение сессии
+       handleSession()
+
+       // вывод данных сессии в консоль
+       sessionLog();     
        const inputParseFunction = function () {
            return document.getElementsByTagName('input')[0].value.toLowerCase();
        }
