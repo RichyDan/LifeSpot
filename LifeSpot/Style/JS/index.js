@@ -44,3 +44,9 @@ function filterContent() {
         }
     }
 }
+
+setTimeout(() =>
+    alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
+    30000);
+
+

@@ -11,7 +11,7 @@
 }
 
 footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     font-size: medium;
     color: dimgrey;
@@ -83,4 +83,18 @@ input {
 
 input:focus{
     border: 4px solid white;
+}
+
+.review-container, .review-button {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
 }

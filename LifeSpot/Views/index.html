@@ -5,20 +5,21 @@
     <title>LifeSpot</title>
     <link href="../Style/CSS/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Style/JS/index.js"></script>
+    <script type="text/javascript" src="../Style/JS/about.js"></script>
     <!-- Внутренний скрипт с вызовами функций -->
-   <script>
-       // Проверка на возраст
-       //checkAge();
+    <script>
+        // Проверка на возраст
+        //checkAge();
 
-       // сохранение сессии
-       handleSession()
+        // сохранение сессии
+        handleSession()
 
-       // вывод данных сессии в консоль
-       sessionLog();     
-       const inputParseFunction = function () {
-           return document.getElementsByTagName('input')[0].value.toLowerCase();
-       }
-   </script>
+        // вывод данных сессии в консоль
+        sessionLog();
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
 </head>
 
 <body>
@@ -64,7 +65,8 @@
     <aside id="sidebar">
         <div class="navbar">
             <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
+            <a href="/about"><p>О проекте</p></a>
+            <a href="/testing"><p>Тестирование</p></a>
         </div>
     </aside>
 
