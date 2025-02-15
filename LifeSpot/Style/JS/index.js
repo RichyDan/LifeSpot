@@ -1,4 +1,11 @@
-﻿function handleSession() {
+﻿// Логирование сессии (объявлено через expression)
+let sessionLog = function logSession(session) {
+    // Вывод в консоль
+    for (let result of session) {
+        console.log(result)
+    }
+}
+function handleSession() {
     // создадим объект Map для хранения сессии
     let session = new Map();
     // Сохраним UserAgent
@@ -21,17 +28,14 @@
         a = true + 20 + "name"
     }
 
-    // Вывод в консоль
-    for (let result of session) {
-        console.log(result)
-    }
+    return session;
 }
 function filterContent() {
-    let inputString=document.getElementsByTagName('input')[0].value.toLowerCase();
-    let elements=document.getElementsByClassName('video-container');
-    for (let i = 0; i <= elements.length; i++){
+    let elements = document.getElementsByClassName('video-container');
+
+    for (let i = 0; i <= elements.length; i++) {
         let videoText = elements[i].querySelector(".video-title").innerText;
-        if (!videoText.toLowerCase().includes(inputString.toLowerCase())) {
+        if (!videoText.toLowerCase().includes(inputParseFunction().toLowerCase())) {
             elements[i].style.display = 'none';
         } else {
             elements[i].style.display = 'inline-block';

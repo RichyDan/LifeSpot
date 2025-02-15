@@ -6,8 +6,14 @@
     <link href="../Style/CSS/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Style/JS/index.js"></script>
     <!-- Внутренний скрипт с вызовами функций -->
-   <script async>
-       //handleSession();
+   <script>
+       // Создадим и обработаем сессию
+       //let session = handleSession();
+       //sessionLog(session);
+       // Функция объявлена через declaration      
+       const inputParseFunction = function () {
+           return document.getElementsByTagName('input')[0].value.toLowerCase();
+       }
    </script>
 </head>
 
@@ -17,7 +23,12 @@
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
-        <input type="text" oninput=" filterContent() " size="50%">
+        <input type="text" oninput=" 
+                                const inputParseFunction = function () {
+                                    return document.getElementsByTagName('input')[0].value.toLowerCase();
+                                }
+                            filterContent(inputParseFunction);
+                           " size="50%">
     </header>
 
     <main>
