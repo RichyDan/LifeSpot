@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Style/CSS/style.css" rel="stylesheet" type="text/css">
-    <script async src="../Style/JS/index.js"></script>
+    <script type="text/javascript" src="../Style/JS/index.js"></script>
+    <!-- Внутренний скрипт с вызовами функций -->
+   <script async>
+       //handleSession();
+   </script>
 </head>
 
 <body>
@@ -13,7 +17,7 @@
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
-        <input type="text" oninput=" showTranslation() " size="50%">
+        <input type="text" oninput=" filterContent() " size="50%">
     </header>
 
     <main>
